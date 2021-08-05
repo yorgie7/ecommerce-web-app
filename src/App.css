@@ -1,38 +1,85 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cntnr {
+  display: flex;
+  flex-direction: row;
+  height: 85vh;
+  padding: 16px 8px;
+  padding-top: 32px;
+  align-items: flex-start;
+  background: #f5f5f5;
+  gap: 20px;
+}
+.ProductList {
+  /* margin: 40px 5% 0 8% ;
   align-items: center;
+  display: inline-grid;
+  grid-gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 12px;
+}
+.product-card-container {
+  /* width: 240px;
+  border: 1px solid lightgrey;
+  padding: 8px; */
+  width: 28%;
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fff;
+}
+.product-title {
+}
+
+.divHideScroll::-webkit-scrollbar {
+  width: 0 !important;
+}
+.divHideScroll {
+  height: 79vh;
+  overflow: scroll;
+}
+
+.add-button {
+  /* width : 100%;
+  height : 30px;
+  background-color: blueviolet;
   color: white;
+  font-size: 16px;
+  border : none; */
+  width: 100%;
+  background: none;
+  font-size: 16px;
+  border: 2px solid #cdcdcd;
+  padding: 10px 12px;
+  border-radius: 4px;
 }
-
-.App-link {
-  color: #61dafb;
+.remove-button {
+  width: 100%;
+  height: 30px;
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-container {
+  margin: 0 8px;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  width: 30%;
+  background: #fff;
+  padding: 16px;
+}
+.cart-title {
+  margin: 0;
 }

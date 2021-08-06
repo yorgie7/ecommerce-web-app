@@ -3,19 +3,17 @@ const initialState = { isLoading: false , products: []};
 export const products = (state = initialState, action) => {
   switch (action.type) {
     
-    case "SET_PRODUCTS":
+    case "FETCH_PRODUCT_SUCCESS":
         
         return {
           ...state,
-          products: [...action.products],
+          products: [...action.products], isLoading: false
         };
 
-        case "SET_LOADING":
-        
-          return {
-            ...state,
-            isLoading: action.status,
-          };
+          case "FETCH_PRODUCT_STARTED":
+            return {
+              ...state, isLoading: true,
+            }
 
     default:
       return state;

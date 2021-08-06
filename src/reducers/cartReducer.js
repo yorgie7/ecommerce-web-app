@@ -2,7 +2,6 @@ const initialState = { cartProducts: [] };
 
 export const cartReducer = (state = initialState, action) => {
   switch (action.type) {
-    // action.product
     case "ADD_PRODUCT":
       const keys = state.cartProducts.map(el => el.id);
       

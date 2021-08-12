@@ -33,6 +33,7 @@
   border-radius: 8px;
   padding: 16px;
   background: #fff;
+  min-width: 200px;
 }
 
 .product-title {
@@ -71,6 +72,7 @@
   width: 30%;
   background: #fff;
   padding: 16px;
+  min-width: 240px;
 }
 
 .cart-title {
@@ -83,15 +85,16 @@
   flex-direction: row;
   border: 1px solid #d9dade;
   border-radius: 4px;
-  padding: 8px;
+  padding: 12px;
   margin: 8px 0;
 }
 
 .cart-item-details {
-  margin-left: 24px;
+  margin-left: 36px;
 }
 
 .empty-cart {
+  text-align: center;
   height: 100px;
-  padding: 25px 125px;
+  padding: 25px 0;
 }
